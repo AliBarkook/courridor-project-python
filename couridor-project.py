@@ -114,8 +114,16 @@ while(True):
     print('firstPalyer', 'turn:')
     movement('first')
     printMap()
+    
+    if (firstPlayerPlace[0] == 16):
+        print('firstPlayer won the game!')
+        break
 
     print('')
     print('secondPalyer', 'turn:')
     movement('second')
     printMap()
+
+    if (secondPlayerPlace[0] == 0):
+        print('secondPlayer won the game!')
+        break
