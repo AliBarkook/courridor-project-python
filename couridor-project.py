@@ -102,8 +102,8 @@ def movement(player):
 
 print('couridor game is runnig')
 
-# firstPalyer = input('enter fist player name:')
-# secondPalyer = input('enter second player name:')
+firstPalyer = input('enter fist player name:')
+secondPalyer = input('enter second player name:')
 
 initialMap()
 
@@ -111,7 +111,7 @@ printMap()
 
 while(True):
     print('')
-    print('firstPalyer', 'turn:')
+    print(firstPalyer, 'turn:')
     movement('first')
     printMap()
     
@@ -120,7 +120,7 @@ while(True):
         break
 
     print('')
-    print('secondPalyer', 'turn:')
+    print(secondPalyer, 'turn:')
     movement('second')
     printMap()
 
